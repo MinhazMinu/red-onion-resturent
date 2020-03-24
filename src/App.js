@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./Components/Header/Header";
 import Banner from "./Components/Banner/Banner";
 import Foods from "./Components/Foods/Foods";
+import SignUp from "./Components/SignUp/SignUp";
 
 import {
   BrowserRouter as Router,
@@ -56,7 +57,7 @@ function App() {
             <FoodDetails cart={cart} cartHandler={cartHandler}></FoodDetails>
           </Route>
           <Route path="/login">
-            <h1>Welcome to Login</h1>
+            <SignUp></SignUp>
           </Route>
           <Route path="*">
             <Link to="/">
